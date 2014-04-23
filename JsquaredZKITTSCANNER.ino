@@ -49,7 +49,7 @@ int scanDelay(){
   //read the input on analog pin 1:
   double potA1Data = analogRead(A1);
   //convert the read in data (ranges 0 to 1023 i.e. 2^10)
-  double scanDelay = (potA1Data/2.73);
+  double scanDelay = (potA1Data/2.73)+25;
   
   if (scanDelay <25){
     scanDelay = 25;
